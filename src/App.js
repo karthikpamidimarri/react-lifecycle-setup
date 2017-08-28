@@ -1,7 +1,10 @@
 import React, { Component } from 'react'
 
 class App extends Component {
-   static displayName = "SomethingNew"
+  static displayName = "SomethingNew"
+  static defaultProps = {
+    someImportArray : []
+  }
 
   render() {
     return (
@@ -10,5 +13,7 @@ class App extends Component {
   }
 }
 
-
+/*App.defaultProps ={
+  someImportArray : []
+}*/
 export default App
